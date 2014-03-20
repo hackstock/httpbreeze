@@ -6,7 +6,7 @@ import java.net.MalformedURLException;
 
 public interface HttpRequestExecutor {
  
-	public Object executeAsGetRequest() throws MalformedURLException, UnsupportedEncodingException,IOException;
-	public Object executeAsPostRequest() throws MalformedURLException, UnsupportedEncodingException,IOException;
+	abstract String executeAsGetRequest() throws MalformedURLException, UnsupportedEncodingException,IOException;
+	abstract String executeAsPostRequest() throws MalformedURLException, UnsupportedEncodingException,IOException;
  
 }
