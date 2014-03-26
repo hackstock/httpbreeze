@@ -12,8 +12,8 @@ public abstract class HttpRequestExecutorTemplate implements HttpRequestExecutor
 		this.httpRequest = httpRequest;
 	}
 	
-	public final Object makeRequest() throws MalformedURLException, UnsupportedEncodingException,IOException{
-		Object response = null;
+	public final String makeRequest() throws MalformedURLException, UnsupportedEncodingException,IOException{
+		String response = null;
 		switch(this.httpRequest.getMethod()){
 		case GET:
 			response = executeAsGetRequest();
